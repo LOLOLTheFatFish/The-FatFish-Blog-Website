@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Quartz 4</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Quartz 4</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Plan</title>
+    <link>https://quartz.jzhao.xyz/EnglishLearning/Plan</link>
+    <guid>https://quartz.jzhao.xyz/EnglishLearning/Plan</guid>
+    <description><![CDATA[ 当然可以！你已经做了大量探索和实践，现在我们把信息高度浓缩，只保留你最关心的三件事： ✅ 一、GitHub 同步流程（每次更新网站只需 4 步） 前提：你已写好日思（如 9.27.md）并复制到 quartz/content/ 文件夹 操作步骤（在 PowerShell 中依次输入）： cd quartz # 进入项目目录 git add . ]]></description>
+    <pubDate>Fri, 26 Sep 2025 22:09:36 GMT</pubDate>
+  </item><item>
+    <title>9.26 日思</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.26</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.26</guid>
+    <description><![CDATA[ 关于英语学习与AI思考 ]]></description>
+    <pubDate>Fri, 26 Sep 2025 14:11:46 GMT</pubDate>
+  </item><item>
+    <title>Welcome to Quartz</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ This is a blank Quartz installation. See the documentation for how to get started. ]]></description>
+    <pubDate>Fri, 26 Sep 2025 03:32:04 GMT</pubDate>
+  </item><item>
+    <title>9.25</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.25</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.25</guid>
+    <description><![CDATA[ 军训第九天。当上了通讯员后，码字记录的时间也得提前了，今天是中午开始记录。一个是我得开始写东西投稿，另一个是避免像昨晚一般，写了两千字仍未抒发完心中的想法，却即将到达寝室关门的时间——好不畅快。 昨晚虽说有了眼罩，或许是码字的热情实在浓烈，卡点回寝室后，整备完睡觉的时间甚至比之前两天有过之而无不及。导致今天的早起遇到了困难，见到了点半的闹钟，只是一味地点击延后，直到下一次40分的闹钟震动起来，方才缓慢地地起了床。穿好衣物出发来到饭堂后，发觉精神似乎比昨天早上好了一点，便不再犹豫，啃完了那3块钱的韭菜盒子，便马上投入到学习中。直到七点十分完成了学习任务后，回到寝室，只见寝室空无一人，洗漱后，我透... ]]></description>
+    <pubDate>Thu, 25 Sep 2025 13:53:29 GMT</pubDate>
+  </item><item>
+    <title>9.24</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.24</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.24</guid>
+    <description><![CDATA[ 军训第八天。不知觉间便来到了第八天，禁不住发出一声“时间过得真快呀”的感叹。这也让我引出了关于“时间的感觉”的思考——为什么随着年龄的增长，我对于时间的感知越来越快？是啊，每当想起小时候无忧无虑的时光，我都会发出一声感叹。从人生的尺度，转换到这刚来到新环境两周军训的尺度下，却惊人的发现这两者似乎并无本质的区别：刚开始无疑是对时间感知最漫长的时候，而到了第二天、第三天…时间在不知不觉间按下了倍速键，原本以秒为单位的时间，经历了八天后，甚至可以用“一上午”“一下午”这样大得多的尺度来衡量！可以想象的是，过完大一，我们会以学期为单位衡量我们的大一；大学毕业，甚至会用四年这样一览式的视角来觉察大学的时... ]]></description>
+    <pubDate>Thu, 25 Sep 2025 13:23:23 GMT</pubDate>
+  </item><item>
+    <title>9.23</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.23</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.23</guid>
+    <description><![CDATA[ 军训第七天。当然，也是我眼罩丢失的第一天。没有床帘，想睡觉，这光源怕是无可避免了。可我并不适应在灯管直射的境况下睡觉，顶多呼吸冥想，只得在空教室自习到十点半，而后回到宿舍，卡着11点熄灯的时间上床睡觉。现如今也怀念起前些有眼罩睡眠的日子了：戴上眼罩，世界从光明转瞬为乌黑；戴上耳塞，些许嘈杂的短视频声也消退了许多，时常能十一点前入睡，一晚上享受接近七小时的睡眠，而后在早上五点半苏醒。可如今睡眠时间的后移，也让我差点黏在了床上，早上的军训，甚至“失去意识”陷入了睡眠。意外的是，下了雨，我们来到了体育馆门前坐着避雨，此时我们学唱着红歌，而我得以小憩一会儿。可这小憩也并不轻松，我时刻留意教官的目光，知... ]]></description>
+    <pubDate>Tue, 23 Sep 2025 13:28:36 GMT</pubDate>
+  </item><item>
+    <title>9.22</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.22</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.22</guid>
+    <description><![CDATA[ 军训第六天。最近的军训较为轻松，五点半早起后来到饭堂干饭后刷英语口语课程，一个半小时后，伸个懒腰提提书包，边走回了宿舍。回去只见5位舍友都在，甚至有的刚起床。正当我疑惑，原来是因为下雨，今早的任务变为内务整理。说实话，军训第六天才开始内务整理，估计只有我们学校才有这样的松弛感了哈哈哈。内务整理，说实话大家并不积极，前面一个多小时，该刷视频的刷视频，打游戏的打游戏。而我对这些并不感冒，可估计是不愿过于无聊，便开始了“一个人的大扫除”。 阳台墙上，沾着许多不知名物体，一坨坨灰色，像是烟头灰，但没那味。直到我把其中一坨用抹布甩开，粘到玻璃门上，显露出白色的痕迹，我才明白，那或许真的是那玩意，却打心底... ]]></description>
+    <pubDate>Mon, 22 Sep 2025 13:41:47 GMT</pubDate>
+  </item><item>
+    <title>周总结+9.21</title>
+    <link>https://quartz.jzhao.xyz/2025.09/%E5%91%A8%E6%80%BB%E7%BB%93+9.21</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/%E5%91%A8%E6%80%BB%E7%BB%93+9.21</guid>
+    <description><![CDATA[ 军训第五天。今天上午的节目是空袭演练：手捂口鼻穿越数个被烟幕弹覆盖的区域，拉响警报后，集体向左右两边趴下。不过我感觉这活动的意义更多在于熟悉校园环境。绕校园又走又跑地行进了三公里，在军歌与口号声的萦绕下，绕回来了训练场。令大家惊喜的是，在训练场休息了半小时后，便直接回了宿舍自行活动，此时是早上的十点半。 来到了这周的周总结。要我给个主题，便是：初步熟悉大学。上大学成了我人生第一次坐高铁的机会。下了高铁来到学校，感受到许多震撼——大多数自小县城到大城市中心区域的震撼，其次是大学真的“大”，不只是区域大，还有它的包容，最直接的感受是6块钱的一荤一素。 从暑假到军训，刚开始的确会有不适应，正如我前些... ]]></description>
+    <pubDate>Sun, 21 Sep 2025 04:59:11 GMT</pubDate>
+  </item><item>
+    <title>9.20</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.20</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.20</guid>
+    <description><![CDATA[ 军训的第四天。沉闷了几天，太阳也冒头了，尽管只出现了一早上，可这也足够把我的肤色晒得黑不溜秋了。大家顶着大太阳，站军姿，练齐步行进。齐步行进可以说是“比较水”的一个科目了，150号人下，即便有两个教官，也时常管不过来，我混在连队之中，一改前些天“草木皆兵”的紧张神情——站累了，便悄悄抖抖腿，甚至小声和周围同学开开玩笑。 到了晚上，照常训练45分钟后来到了休息时间。意外的是，这次休息时间格外的长，一直休息到下训。由于我们同学的积极沟通，成功和女生的连队坐在一起——三面是女生的连队，另外一面是我们男生的连队。大家表演节目，人头攒动，我几乎看不清前面发生了什么，嬉笑声下，只是不明不白地度过了这段时光... ]]></description>
+    <pubDate>Sat, 20 Sep 2025 13:13:24 GMT</pubDate>
+  </item><item>
+    <title>9.19</title>
+    <link>https://quartz.jzhao.xyz/2025.09/9.19</link>
+    <guid>https://quartz.jzhao.xyz/2025.09/9.19</guid>
+    <description><![CDATA[ 今天是军训的第三天，阴天，伴随着一阵大雨和毛毛细雨。早上九点半下起倾盆大雨，连队便转移至体育馆下。训练暂停，取而代之的是学唱军歌、拉歌口号，还有个人的上台表演。人很多，教官也感冒了，队列也在沙哑的口号声下摇摇晃晃地运作了。早上的个人表演，我是第一个，站在台上激情唱着广东省省歌海阔天空。 到了下午，不知为何原本的两位教官变成了一位，还是那位因感冒而喉咙沙哑的教官带队。一百五十号人也因此似乎变得松松散散，大家甚至在队列里有说有笑。到了晚上继续练习齐步走，另一位教官也回来了，大家的训练也变得格外认真。 顺带一提，我们学校是真的大，三个饭堂。因为接近千五人的新生，我们得分开去饭堂开放。这次我们去的是三... ]]></description>
+    <pubDate>Fri, 19 Sep 2025 13:20:18 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
