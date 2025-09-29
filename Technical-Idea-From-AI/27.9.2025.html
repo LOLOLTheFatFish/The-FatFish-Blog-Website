@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>27.9.2025</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="27.9.2025"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="27.9.2025"/><meta name="twitter:description" content="你的担忧非常清醒且珍贵——这恰恰说明你不是在盲目依赖 AI，而是在思考：“如何用它真正增强自己，而不是削弱自己？” 你上传的这篇文章，其实已经给出了答案的核心：AI 应该是“认知的健身房教练”，而不是“代你举铁的机器人”。 下面我结合你的目标（用代码实现自己的产品想法）和文章的核心洞见，给你一套既高效又不削弱你思维能力的 AI 使用策略。 🌟 核心原则：用 AI 加速“做”，但不跳过“学” 正如文章所说： “Before you use AI to help write a report, write the first draft yourself.” “Before you use an..."/><meta property="og:description" content="你的担忧非常清醒且珍贵——这恰恰说明你不是在盲目依赖 AI，而是在思考：“如何用它真正增强自己，而不是削弱自己？” 你上传的这篇文章，其实已经给出了答案的核心：AI 应该是“认知的健身房教练”，而不是“代你举铁的机器人”。 下面我结合你的目标（用代码实现自己的产品想法）和文章的核心洞见，给你一套既高效又不削弱你思维能力的 AI 使用策略。 🌟 核心原则：用 AI 加速“做”，但不跳过“学” 正如文章所说： “Before you use AI to help write a report, write the first draft yourself.” “Before you use an..."/><meta property="og:image:alt" content="你的担忧非常清醒且珍贵——这恰恰说明你不是在盲目依赖 AI，而是在思考：“如何用它真正增强自己，而不是削弱自己？” 你上传的这篇文章，其实已经给出了答案的核心：AI 应该是“认知的健身房教练”，而不是“代你举铁的机器人”。 下面我结合你的目标（用代码实现自己的产品想法）和文章的核心洞见，给你一套既高效又不削弱你思维能力的 AI 使用策略。 🌟 核心原则：用 AI 加速“做”，但不跳过“学” 正如文章所说： “Before you use AI to help write a report, write the first draft yourself.” “Before you use an..."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Technical-Idea-From-AI/27.9.2025"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Technical-Idea-From-AI/27.9.2025"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="你的担忧非常清醒且珍贵——这恰恰说明你不是在盲目依赖 AI，而是在思考：“如何用它真正增强自己，而不是削弱自己？” 你上传的这篇文章，其实已经给出了答案的核心：AI 应该是“认知的健身房教练”，而不是“代你举铁的机器人”。 下面我结合你的目标（用代码实现自己的产品想法）和文章的核心洞见，给你一套既高效又不削弱你思维能力的 AI 使用策略。 🌟 核心原则：用 AI 加速“做”，但不跳过“学” 正如文章所说： “Before you use AI to help write a report, write the first draft yourself.” “Before you use an..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiQzpcXFVzZXJzXFwxNTQ4MVxccXVhcnR6XFxxdWFydHpcXGNvbXBvbmVudHNcXHN0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/></head><body data-slug="Technical-Idea-From-AI/27.9.2025"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-22"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-22" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../Technical-Idea-From-AI/">Technical Idea From AI</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>27.9.2025</a></div></nav><h1 class="article-title">27.9.2025</h1><p show-comma="true" class="content-meta"><time datetime="2025-09-27T23:20:55.008Z">Sep 28, 2025</time><span>13 min read</span></p></div></div><article class="popover-hint"><p>你的担忧<strong>非常清醒且珍贵</strong>——这恰恰说明你不是在盲目依赖 AI，而是在思考：<strong>“如何用它真正增强自己，而不是削弱自己？”</strong><br/>
+你上传的这篇文章，其实已经给出了答案的核心：<strong>AI 应该是“认知的健身房教练”，而不是“代你举铁的机器人”</strong>。</p>
+<p>下面我结合你的目标（<strong>用代码实现自己的产品想法</strong>）和文章的核心洞见，给你一套<strong>既高效又不削弱你思维能力的 AI 使用策略</strong>。</p>
+<hr/>
+<h2 id="-核心原则用-ai-加速做但不跳过学">🌟 核心原则：<strong>用 AI 加速“做”，但不跳过“学”</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-核心原则用-ai-加速做但不跳过学" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>正如文章所说：<br/>
+<strong>“Before you use AI to help write a report, write the first draft yourself.”</strong><br/>
+<strong>“Before you use an AI code generator, manually write and debug a small algorithm.”</strong></p>
+</blockquote>
+<p>对你来说，这意味着：</p>
+<p>✅ <strong>不要让 AI 从零替你“想清楚”</strong><br/>
+❌ 不要问：“帮我做一个读书笔记网站。”<br/>
+✅ 要问：“我已经想好了，首页要有书名输入框、星级评分、感想文本区。请用 React 帮我生成这个页面的代码。”</p>
+<p>→ <strong>你先定义结构、逻辑、需求（这是“思考”），AI 负责翻译成代码（这是“执行”）</strong>。</p>
+<hr/>
+<h2 id="-具体行动指南三步走既快又强">🔧 具体行动指南：三步走，既快又强<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-具体行动指南三步走既快又强" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="第一步先手动搭骨架哪怕很粗糙">第一步：<strong>先“手动搭骨架”（哪怕很粗糙）</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第一步先手动搭骨架哪怕很粗糙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>在叫 AI 之前，自己用纸、笔记或 Markdown 写下：</p>
+<ul>
+<li>用户能做什么？（功能列表）</li>
+<li>页面长什么样？（画个草图或文字描述）</li>
+<li>数据怎么流动？（比如：点“保存” → 数据存到哪？）</li>
+</ul>
+<blockquote>
+<p>📌 这一步你在<strong>构建“认知脚手架”</strong>，就像篮球运动员先理解“什么是运球”，再练肌肉记忆。</p>
+</blockquote>
+<h3 id="第二步让-ai-填充血肉但你掌控方向">第二步：<strong>让 AI 填充血肉，但你掌控方向</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第二步让-ai-填充血肉但你掌控方向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>把你的骨架给 AI，说：</p>
+<blockquote>
+<p>“请根据以下需求生成代码：</p>
+<ul>
+<li>页面包含：书名输入框、1~5 星评分组件、多行文本框</li>
+<li>点击‘保存’后，数据存入 localStorage</li>
+<li>使用 React + Tailwind CSS”</li>
+</ul>
+</blockquote>
+<p>→ AI 会给你代码，但<strong>你必须看懂每一部分是干嘛的</strong>（哪怕只看注释）。<br/>
+如果看不懂，就问 AI：“请用简单中文解释这段代码的作用。”</p>
+<blockquote>
+<p>📌 这是在<strong>主动检索知识</strong>，而不是被动接收信息——这正是文章推崇的“主动回忆”学习法。</p>
+</blockquote>
+<h3 id="第三步自己动手改一点哪怕很小">第三步：<strong>自己动手改一点，哪怕很小</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第三步自己动手改一点哪怕很小" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>拿到 AI 代码后，不要直接运行完事。尝试：</p>
+<ul>
+<li>把按钮颜色从蓝色改成绿色</li>
+<li>把“保存”改成“存档”</li>
+<li>加一句 console.log 看数据是否正确</li>
+</ul>
+<blockquote>
+<p>📌 这些微小修改，是在<strong>激活你的工作记忆</strong>，把“租来的知识”变成“自己的神经通路”。</p>
+</blockquote>
+<hr/>
+<h2 id="️-要警惕的认知陷阱来自文章的警告">⚠️ 要警惕的“认知陷阱”（来自文章的警告）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-要警惕的认知陷阱来自文章的警告" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>陷阱</th><th>表现</th><th>如何避免</th></tr></thead><tbody><tr><td><strong>外包思考</strong></td><td>直接让 AI 决定“该用什么技术”“怎么设计页面”</td><td>你先做决定，AI 只负责实现</td></tr><tr><td><strong>虚假掌握</strong></td><td>看着 AI 生成的代码觉得“我懂了”，但自己写不出来</td><td>每周选一个小功能，尝试不靠 AI 重写一遍</td></tr><tr><td><strong>跳过预测</strong></td><td>不思考“这段代码应该输出什么”，直接运行看结果</td><td>先猜结果，再验证——让大脑产生“预测误差”来学习</td></tr></tbody></table></div>
+<hr/>
+<h2 id="-给你的长期建议做有肌肉的创造者">💡 给你的长期建议：做“有肌肉的创造者”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-给你的长期建议做有肌肉的创造者" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>文章说：<strong>“A mind without knowledge is a body without muscle.”</strong><br/>
+你想长期做产品，就需要<strong>认知肌肉</strong>——而肌肉只能通过“主动用力”长出来。</p>
+<p>所以，请把 AI 当作：</p>
+<ul>
+<li>✅ <strong>实习生</strong>：你给任务，它执行</li>
+<li>✅ <strong>教练</strong>：你写代码，它指出错误</li>
+<li>✅ <strong>协作者</strong>：你提想法，它给优化建议</li>
+</ul>
+<p>但<strong>永远不要让它当“大脑”</strong>。</p>
+<hr/>
+<h2 id="-最后送你一句话">🌈 最后送你一句话：<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-最后送你一句话" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>用 AI 实现想法的速度，不该以牺牲你理解世界的能力为代价。</strong><br/>
+你不需要记住所有代码，但要理解“为什么这样写”。<br/>
+你不需要手写每一行，但要能判断“它对不对”。</p>
+</blockquote>
+<p>你现在走的路，正是文章推崇的那群“最聪明的人”在走的路：<br/>
+<strong>他们用技术，但不被技术驯化；他们借力 AI，但始终是思考的主人。</strong></p>
+<p>如果你愿意，现在就可以告诉我你的产品想法，我会陪你一起：</p>
+<ol>
+<li>先手动搭骨架</li>
+<li>再用 AI 填充</li>
+<li>最后你动手改一点</li>
+</ol>
+<p>这才是<strong>真正属于你的创造</strong>。</p>
+<p>你的迷茫<strong>完全正常且合理</strong>——你正站在一个关键的十字路口：</p>
+<blockquote>
+<p><strong>“我想用 AI 实现想法，但又怕不懂代码就永远被卡在‘说不清需求’的阶段。”</strong></p>
+</blockquote>
+<p>好消息是：<strong>你不需要先成为程序员，就能跨越这个阶段</strong>。<br/>
+而更好的消息是：<strong>AI 本身就可以成为你学习“刚好够用”的编程知识的最佳老师</strong>。</p>
+<p>下面我给你一套 <strong>“用 AI 学编程，只为更好用 AI 做产品”</strong> 的极简路径，专为零基础、目标明确的你设计。</p>
+<hr/>
+<h2 id="-核心策略学接口语言不学底层原理">🌟 核心策略：<strong>学“接口语言”，不学“底层原理”</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-核心策略学接口语言不学底层原理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>你不需要知道“React 的虚拟 DOM 是怎么 diff 的”，<br/>
+但你需要知道：</p>
+<ul>
+<li>“页面 = 一堆组件拼起来的”</li>
+<li>“数据变了，页面会自动更新”</li>
+<li>“点按钮要触发一个函数”</li>
+</ul>
+<p>这些叫 <strong>“接口知识”</strong> ——就像你会用手机拍照，不需要懂 CMOS 传感器原理，但要知道“点这里能拍，滑动能调焦”。</p>
+<hr/>
+<h2 id="-具体怎么做三步闭环ai-全程陪跑">✅ 具体怎么做？三步闭环，AI 全程陪跑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-具体怎么做三步闭环ai-全程陪跑" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="第-1-步让-ai-把你的想法翻译成开发语言你来主导">第 1 步：<strong>让 AI 把你的想法“翻译”成开发语言（你来主导）</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第-1-步让-ai-把你的想法翻译成开发语言你来主导" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>你写：</p>
+<blockquote>
+<p>“我想做一个读书笔记网站，用户可以输入书名、打 1~5 星、写一段感想，点‘保存’后下次打开还能看到。”</p>
+</blockquote>
+<p>然后对 AI 说：</p>
+<blockquote>
+<p>“请把上面的需求，拆解成前端开发中常见的几个部分：页面、组件、数据存储方式。用简单中文解释每个部分的作用，不要用专业术语，如果必须用，请附上比喻。”</p>
+</blockquote>
+<p>AI 会返回类似：</p>
+<ul>
+<li><strong>页面</strong>：就像一张纸，放所有东西（首页）</li>
+<li><strong>组件</strong>：像乐高积木——“星级评分”是一个积木，“保存按钮”是另一个</li>
+<li><strong>数据存储</strong>：像笔记本，关掉网页后还能记住内容（用 <code>localStorage</code>）</li>
+</ul>
+<p>👉 <strong>你得到了“开发视角”的需求清单，但没学一行代码。</strong></p>
+<hr/>
+<h3 id="第-2-步让-ai-教你刚好够用的代码概念按需学习">第 2 步：<strong>让 AI 教你“刚好够用”的代码概念（按需学习）</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第-2-步让-ai-教你刚好够用的代码概念按需学习" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>当你看到 AI 生成的代码里有你不认识的东西，比如：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="jsx" data-theme="github-light github-dark"><code data-language="jsx" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">count</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">setCount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useState</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span></span></code></pre></figure>
+<p>不要慌！直接问 AI：</p>
+<blockquote>
+<p>“请用生活例子解释这行代码是什么意思？我只需要知道它‘做什么’，不需要知道‘为什么这样写’。”</p>
+</blockquote>
+<p>AI 会回答：</p>
+<blockquote>
+<p>“这就像你有一个水杯（<code>count</code>），初始是空的（0）。<code>setCount</code> 是你倒水的手——你想加水，就调用 <code>setCount(1)</code>，杯子就变成 1。React 会自动把页面上的数字更新。”</p>
+</blockquote>
+<p>👉 <strong>你只学“这个语法能实现什么效果”，不学“React 状态管理原理”。</strong></p>
+<hr/>
+<h3 id="第-3-步让-ai-帮你动手改一点激活你的认知">第 3 步：<strong>让 AI 帮你“动手改一点”（激活你的认知）</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第-3-步让-ai-帮你动手改一点激活你的认知" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>拿到代码后，不要直接复制。对 AI 说：</p>
+<blockquote>
+<p>“请指导我手动修改这个按钮的颜色为绿色，告诉我具体改哪一行、改成什么。如果我改错了，你能帮我指出吗？”</p>
+</blockquote>
+<p>AI 会一步步引导你：</p>
+<ol>
+<li>找到 <code>&lt;button className=&quot;bg-blue-500&quot;></code></li>
+<li>把 <code>bg-blue-500</code> 改成 <code>bg-green-500</code></li>
+<li>运行看效果</li>
+</ol>
+<p>👉 <strong>你完成了“微小但真实的创造”</strong>，这正是文章强调的 <strong>“主动回忆 + 预测误差”</strong> 学习法。</p>
+<hr/>
+<h2 id="-你需要系统学编程吗">📚 你需要系统学编程吗？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-你需要系统学编程吗" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>短期（3–6 个月）：完全不需要。</strong><br/>
+<strong>长期（1 年以上）：只需学“概念地图”，不需学“语法细节”。</strong></p>
+<h3 id="推荐你只掌握这-5-个核心概念每个-10-分钟">推荐你只掌握这 5 个核心概念（每个 10 分钟）：<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#推荐你只掌握这-5-个核心概念每个-10-分钟" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>概念</th><th>你要知道什么</th><th>学习资源（中文）</th></tr></thead><tbody><tr><td><strong>变量（Variable）</strong></td><td>就像“贴了标签的盒子”，存数字、文字等</td><td><a href="https://www.runoob.com/js/js-variables.html" class="external">菜鸟教程 - JS 变量<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td><strong>函数（Function）</strong></td><td>就像“小机器人”，你叫它，它就做事</td><td><a href="https://www.bilibili.com/video/BV1U4411u7mV" class="external">B站：5分钟看懂函数<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td><strong>组件（Component）</strong></td><td>网页的“乐高积木”，可重复用</td><td>Trae 生成后问：“这是组件吗？怎么复用？”</td></tr><tr><td><strong>事件（Event）</strong></td><td>用户操作（点击、输入）触发的动作</td><td>问 AI：“怎么让按钮点一下弹出‘你好’？”</td></tr><tr><td><strong>数据存储（Storage）</strong></td><td>数据放哪？浏览器（临时） vs 云端（永久）</td><td>问 AI：“localStorage 和 Firebase 有什么区别？”</td></tr></tbody></table></div>
+<blockquote>
+<p>⏱️ 总共不到 1 小时，但能让你和 AI 沟通效率翻倍。</p>
+</blockquote>
+<hr/>
+<h2 id="-终极建议把-ai-当作你的认知脚手架">💡 终极建议：把 AI 当作你的“认知脚手架”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-终极建议把-ai-当作你的认知脚手架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>正如你上传的文章所说：</p>
+<blockquote>
+<p><strong>“Before you use an AI code generator, manually write and debug a small algorithm.”</strong></p>
+</blockquote>
+<p>但对零基础的你，可以调整为：</p>
+<blockquote>
+<p><strong>“Before you accept AI’s code, make sure you can explain what it does in your own words.”</strong></p>
+</blockquote>
+<p>你不需要手写算法，但你要<strong>用自己的话复述 AI 的代码逻辑</strong>。<br/>
+这就是 <strong>“主动加工知识”</strong>，而不是“被动接收信息”。</p>
+<hr/>
+<h2 id="-最后送你一句话-1">🌈 最后送你一句话：<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-最后送你一句话-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>你不是在“学编程”，你是在“学如何与 AI 协作创造”。</strong><br/>
+编程知识只是你们之间的“共同语言”，而你，是那个定义价值、判断方向、坚持到底的创造者。</p>
+</blockquote>
+<p>现在，你可以放心地：</p>
+<ol>
+<li>继续用自然语言描述你的想法</li>
+<li>让 AI 帮你翻译成开发术语</li>
+<li>遇到不懂的，当场问 AI “用比喻解释”</li>
+<li>每次改一行代码，都是在锻炼你的“认知肌肉”</li>
+</ol>
+<p>如果你愿意，现在就告诉我你的产品想法，我会陪你走完这四步，<strong>从零开始，做出第一个可运行的版本</strong>。你不是一个人在战斗！</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#-核心原则用-ai-加速做但不跳过学" data-for="-核心原则用-ai-加速做但不跳过学">🌟 核心原则：用 AI 加速“做”，但不跳过“学”</a></li><li class="depth-0"><a href="#-具体行动指南三步走既快又强" data-for="-具体行动指南三步走既快又强">🔧 具体行动指南：三步走，既快又强</a></li><li class="depth-1"><a href="#第一步先手动搭骨架哪怕很粗糙" data-for="第一步先手动搭骨架哪怕很粗糙">第一步：先“手动搭骨架”（哪怕很粗糙）</a></li><li class="depth-1"><a href="#第二步让-ai-填充血肉但你掌控方向" data-for="第二步让-ai-填充血肉但你掌控方向">第二步：让 AI 填充血肉，但你掌控方向</a></li><li class="depth-1"><a href="#第三步自己动手改一点哪怕很小" data-for="第三步自己动手改一点哪怕很小">第三步：自己动手改一点，哪怕很小</a></li><li class="depth-0"><a href="#️-要警惕的认知陷阱来自文章的警告" data-for="️-要警惕的认知陷阱来自文章的警告">⚠️ 要警惕的“认知陷阱”（来自文章的警告）</a></li><li class="depth-0"><a href="#-给你的长期建议做有肌肉的创造者" data-for="-给你的长期建议做有肌肉的创造者">💡 给你的长期建议：做“有肌肉的创造者”</a></li><li class="depth-0"><a href="#-最后送你一句话" data-for="-最后送你一句话">🌈 最后送你一句话：</a></li><li class="depth-0"><a href="#-核心策略学接口语言不学底层原理" data-for="-核心策略学接口语言不学底层原理">🌟 核心策略：学“接口语言”，不学“底层原理”</a></li><li class="depth-0"><a href="#-具体怎么做三步闭环ai-全程陪跑" data-for="-具体怎么做三步闭环ai-全程陪跑">✅ 具体怎么做？三步闭环，AI 全程陪跑</a></li><li class="depth-1"><a href="#第-1-步让-ai-把你的想法翻译成开发语言你来主导" data-for="第-1-步让-ai-把你的想法翻译成开发语言你来主导">第 1 步：让 AI 把你的想法“翻译”成开发语言（你来主导）</a></li><li class="depth-1"><a href="#第-2-步让-ai-教你刚好够用的代码概念按需学习" data-for="第-2-步让-ai-教你刚好够用的代码概念按需学习">第 2 步：让 AI 教你“刚好够用”的代码概念（按需学习）</a></li><li class="depth-1"><a href="#第-3-步让-ai-帮你动手改一点激活你的认知" data-for="第-3-步让-ai-帮你动手改一点激活你的认知">第 3 步：让 AI 帮你“动手改一点”（激活你的认知）</a></li><li class="depth-0"><a href="#-你需要系统学编程吗" data-for="-你需要系统学编程吗">📚 你需要系统学编程吗？</a></li><li class="depth-1"><a href="#推荐你只掌握这-5-个核心概念每个-10-分钟" data-for="推荐你只掌握这-5-个核心概念每个-10-分钟">推荐你只掌握这 5 个核心概念（每个 10 分钟）：</a></li><li class="depth-0"><a href="#-终极建议把-ai-当作你的认知脚手架" data-for="-终极建议把-ai-当作你的认知脚手架">💡 终极建议：把 AI 当作你的“认知脚手架”</a></li><li class="depth-0"><a href="#-最后送你一句话-1" data-for="-最后送你一句话-1">🌈 最后送你一句话：</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
